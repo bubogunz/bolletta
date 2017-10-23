@@ -14,7 +14,7 @@ public:
   bool sameNumber(const unsigned short int *, const unsigned short  int *) const;
 private:
   orario inizio, fine;
-  unsigned short int* numero;
+  unsigned short int* numero; //banana
 };
 
 std::ostream& operator<<(std::ostream&, const telefonata&);
