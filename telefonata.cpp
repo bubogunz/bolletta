@@ -1,6 +1,6 @@
 #include "telefonata.h"
 
-telefonata::telefonata(orario i, orario o, short int *n): inizio(i), fine(o) {
+telefonata::telefonata(orario i, orario o, unsigned short int *n): inizio(i), fine(o) {
   int j = 0;
   numero = new short int[14];
   while(j<14) { numero[j] = n[j]; j++; }
