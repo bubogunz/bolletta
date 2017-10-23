@@ -5,16 +5,16 @@
 class telefonata{
 public:
   telefonata();
-  telefonata(orario, orario, short int * =0);
+  telefonata(orario, orario, unsigned short int * =0);
   telefonata(const telefonata&);
   orario Inizio() const;
   orario Fine() const;
-  short int* Numero() const;
+  unsigned short int* Numero() const;
   bool operator==(const telefonata&) const;
-  bool sameNumber(const short int *, const short  int *) const;
+  bool sameNumber(const unsigned short int *, const unsigned short  int *) const;
 private:
   orario inizio, fine;
-  short int* numero;
+  unsigned short int* numero;
 };
 
 std::ostream& operator<<(std::ostream&, const telefonata&);
